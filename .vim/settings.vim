@@ -37,9 +37,7 @@ nnoremap <C-Right> :tabnext<CR>
 " set filetypes as typescript.tsx
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
-" solarized options
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
+" Color config
 colorscheme one
 set background=dark
 

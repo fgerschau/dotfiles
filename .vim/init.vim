@@ -33,6 +33,18 @@ if filereadable(expand("~/dotfiles/.vim/plugs.vim"))
   source ~/dotfiles/.vim/plugs.vim
 endif
 
+" =============== Keybinding ===============
+if filereadable(expand("~/dotfiles/.vim/keys.vim"))
+  source ~/dotfiles/.vim/keys.vim
+endif
+
+
+" =============== Statusline ===============
+if filereadable(expand("~/dotfiles/.vim/statusline.vim"))
+  source ~/dotfiles/.vim/statusline.vim
+endif
+
+
 " ===== encoding =====
 set encoding=utf8
 set ffs=unix,dos,mac
