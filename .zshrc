@@ -111,6 +111,9 @@ eval $(thefuck --alias)
 # Change default vimrc directory
 export VIMINIT="source ~/dotfiles/.vim/init.vim"
 
+# dotnet cli language settins
+DOTNET_CLI_UI_LANGUAGE="en"
+
 setxkbmap -option caps:swapescape
 xset r rate 250 60
 
