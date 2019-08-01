@@ -100,6 +100,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias gpup="git push -u origin HEAD"
+alias gs="git status"
 alias typescriptify="$HOME/scripts/typescriptify.sh"
 
 eval "$(thefuck --alias)"
