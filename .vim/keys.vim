@@ -1,5 +1,7 @@
 " Leader
 let mapleader=','
+map , <leader>
+map m <leader>
 
 "" no one is really happy until you have this shortcuts
 cnoreabbrev W! w!
@@ -115,7 +117,10 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-"" Buffer nav
+" Restart tsserver
+nnoremap <leader>ts :CocCommand tsserver.restart<CR>
+
+" Buffer nav
 noremap <leader>z :bp<CR>
 noremap <leader>q :bp<CR>
 noremap <leader>x :bn<CR>
