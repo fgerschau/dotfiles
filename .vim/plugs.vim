@@ -8,6 +8,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'rakr/vim-one', { 'as': 'one'  }
 Plug 'vim-airline/vim-airline'
+
 " Typescript
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'soywod/typescript.vim'
@@ -30,6 +31,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/BufOnly.vim'
 " Git
 Plug 'tpope/vim-fugitive'
-
+" Airline theme
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 

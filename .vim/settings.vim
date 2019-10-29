@@ -38,7 +38,7 @@ nnoremap <C-Right> :tabnext<CR>
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
 " Color config
-colorscheme one
+colorscheme solarized
 set background=dark
 
 " Fuzzy search options crtlp
