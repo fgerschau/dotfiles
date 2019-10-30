@@ -152,3 +152,8 @@ xnoremap s' xi''<Esc>P%
 
 " Coc
 nmap <leader>rn <Plug>(coc-rename)
+
+" Search
+nmap <leader>FF <Plug>CtrlSFPrompt
+nmap <leader>Fn <Plug>CtrlSFCwordPath
+nmap <leader>Fp <Plug>CtrlSFPwordPath
