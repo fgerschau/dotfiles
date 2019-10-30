@@ -40,7 +40,12 @@ nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
+function! s:go_to_definition()
+  execute ':NERDTreeClose'
+  call CocAction('jumpDefinition')
+endfunction
+
+nmap <silent> gd :call <SID>go_to_definition()<CR>
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
