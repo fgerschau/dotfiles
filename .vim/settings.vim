@@ -15,7 +15,6 @@ function! IsNERDTreeOpen()
   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
 
-
 " Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
 " file, and we're not in vimdiff
 function! SyncTree()
@@ -38,11 +37,17 @@ nnoremap <C-Right> :tabnext<CR>
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
 " Color config
-colorscheme solarized
 set background=dark
+colorscheme solarized
 
 " Fuzzy search options crtlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+" Requires fd to be installed (brew install fd)
+let g:ctrlp_user_command = 'fd --type f --color=never "" %s'
+let g:ctrlp_use_caching = 0
+" Requires boost to be installed (brew install cmake python boost)
+" https://bluz71.github.io/2017/10/26/turbocharge-the-ctrlp-vim-plugin.html
+" let g:ctrlp_match_func = { 'match': 'cpsm#CtrlPMatch' }
 
 " ===== Coc =====
 set hidden
