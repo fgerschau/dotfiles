@@ -1,3 +1,9 @@
+# https://stackoverflow.com/a/47578099/5503856
+if [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
