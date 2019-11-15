@@ -124,3 +124,7 @@ DOTNET_CLI_UI_LANGUAGE="en"
 setxkbmap -option caps:swapescape
 xset r rate 250 60
 
+
+# Flutter devtools
+# Activate with $ flutter pub global activate devtools
+export PATH="$PATH":"$HOME/flutter/.pub-cache/bin"
