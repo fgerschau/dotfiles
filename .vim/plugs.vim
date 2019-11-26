@@ -50,4 +50,8 @@ Plug 'nixprime/cpsm', { 'do': 'env PY3=OFF ./install.sh' }
 
 " Fixes weird quickfix window behavior
 Plug 'romainl/vim-qf'
+
+" Markdown preview
+Plug 'JamshedVesuna/vim-markdown-preview'
+
 call plug#end()

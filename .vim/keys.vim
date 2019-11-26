@@ -157,3 +157,6 @@ nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>FF <Plug>CtrlSFPrompt
 nmap <leader>Fn <Plug>CtrlSFCwordPath
 nmap <leader>Fp <Plug>CtrlSFPwordPath
+
+" Markdown preview toggle
+let vim_markdown_preview_hotkey='<C-m>'

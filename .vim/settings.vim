@@ -1,5 +1,4 @@
 " ================ Stuff I added later ================
-
 " ================== Nerdtree ==================
 nmap <F6> :NERDTreeToggle<CR>
 
@@ -53,3 +52,7 @@ let g:ctrlp_use_caching = 0
 set hidden
 set cmdheight=2
 set shortmess=aFc
+
+" Markdown preview
+let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Google Chrome'
