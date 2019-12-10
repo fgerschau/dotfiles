@@ -56,3 +56,11 @@ set shortmess=aFc
 " Markdown preview
 let vim_markdown_preview_github=1
 let vim_markdown_preview_browser='Google Chrome'
+
+" Vim-test settings
+let g:test#preserve_screen = 0
+
+" Enters normal mode in terminal
+if has('nvim')
+  tmap <C-o> <C-\><C-n>
+endif

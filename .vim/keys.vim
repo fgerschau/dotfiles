@@ -134,7 +134,7 @@ noremap <leader>q :bp<CR>
 noremap <leader>x :bn<CR>
 noremap <leader>w :bn<CR>
 
-"" Close buffer
+" Close buffer
 noremap <leader>d :bp\|bd #<CR>
 
 " Close all buffers except the current one
@@ -163,3 +163,10 @@ nmap <leader>Fp <Plug>CtrlSFPwordPath
 
 " Markdown preview toggle
 let vim_markdown_preview_hotkey='<C-m>'
+
+" Vim test
+nmap <leader>tf :TestFile<CR>
+nmap <leader>tn :TestNearest<CR>
+nmap <leader>ts :TestSuite<CR>
+nmap <leader>tl :TestLast<CR>
+nmap <leader>tv :TestVisit<CR>

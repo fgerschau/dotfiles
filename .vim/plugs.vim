@@ -54,4 +54,7 @@ Plug 'romainl/vim-qf'
 " Markdown preview
 Plug 'JamshedVesuna/vim-markdown-preview'
 
+" Testing
+Plug 'janko-m/vim-test'
+
 call plug#end()
