@@ -3,6 +3,9 @@ let mapleader=','
 map , <leader>
 map m <leader>
 
+" Map / to - since it's easier to reach
+nmap - /
+
 "" no one is really happy until you have this shortcuts
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
@@ -123,7 +126,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Restart tsserver
-nnoremap <leader>ts :CocCommand tsserver.restart<CR>
+nnoremap <leader>tr :CocCommand tsserver.restart<CR>
 
 " Buffer nav
 noremap <leader>z :bp<CR>
