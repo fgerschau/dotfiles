@@ -26,6 +26,11 @@ endfunction
 " Highlight currently open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
 
+" Quits nerdtree when opening a file
+let g:NERDTreeQuitOnOpen = 1
+
+let g:NERDTreeWinSize=60
+
 " ================== Tabs ==================
 let NERDTreeMapOpenInTab='\r'
 nnoremap <C-Left> :tabprevious<CR>
