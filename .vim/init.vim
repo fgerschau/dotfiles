@@ -113,6 +113,9 @@ autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent
 " ================ Custom Settings ========================
 so ~/dotfiles/.vim/settings.vim
 
+" ================ Templates ==============================
+so ~/dotfiles/.vim/templates/templates.vim
+
 " ================ Local Vimrc ========================
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
