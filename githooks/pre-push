@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+# Has to be added with
+# git config --global core.hooksPath ~/dotfiles/githooks
+# and made executable
+# chmod +x ./pre-push
+
 if test -e ./.git/hooks/pre-push
 then
   command sh ./.git/hooks/pre-push
