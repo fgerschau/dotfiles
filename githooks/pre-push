@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+if test -e ./.git/hooks/pre-push
+then
+  command sh ./.git/hooks/pre-push
+fi
+
+if test -e ./jest.config.js
+then
+  npm test
+fi
