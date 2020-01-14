@@ -6,7 +6,7 @@ map m <leader>
 " Map / to - since it's easier to reach
 nmap - /
 
-"" no one is really happy until you have this shortcuts
+" no one is really happy until you have this shortcuts
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev Qall! qall!
@@ -136,6 +136,7 @@ noremap <leader>w :bn<CR>
 
 " Close buffer
 noremap <leader>d :bp\|bd #<CR>
+noremap <leader>D :bd!<CR>
 
 " Close all buffers except the current one
 noremap <leader>s :BufOnly<CR>
@@ -153,7 +154,7 @@ xnoremap s{ xi{}<Esc>P%
 xnoremap s" xi""<Esc>P%
 xnoremap s' xi''<Esc>P%
 
-" Coc
+" COC
 nmap <leader>rn <Plug>(coc-rename)
 
 " Search
@@ -170,3 +171,6 @@ nmap <leader>tn :TestNearest<CR>
 nmap <leader>ts :TestSuite<CR>
 nmap <leader>tl :TestLast<CR>
 nmap <leader>tv :TestVisit<CR>
+
+" Emojis
+nnoremap <leader>et a<C-v>U2705<esc>
