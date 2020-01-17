@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -e
+
+# Has to be added with
+# git config --global core.hooksPath ~/dotfiles/githooks
+# and made executable
+# chmod +x ./pre-commit
+
+if test -e ./.git/hooks/pre-commit
+then
+  command sh ./.git/hooks/pre-commit
+fi
+
+if test -e ./tslint.json
+then
+  git diff --name-only --cached | xargs tslint
+fi
+
+if test -e ./eslint.json
+then
+  git diff --name-only --cached | xargs eslint
+fi
