@@ -11,12 +11,12 @@ then
   command sh ./.git/hooks/pre-commit
 fi
 
-if test -e ./tslint.json
-then
-  git diff --name-only --cached | xargs tslint
-fi
+#if test -e ./tslint.json
+#then
+  #git diff --name-only --cached | xargs tslint
+#fi
 
-if test -e ./eslint.json
-then
-  git diff --name-only --cached | xargs eslint
-fi
+#if test -e ./eslint.json
+#then
+  #git diff --name-only --cached | xargs eslint
+#fi
