@@ -57,4 +57,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 " Testing
 Plug 'janko-m/vim-test'
 
+" Linting
+Plug 'dense-analysis/ale'
+
 call plug#end()

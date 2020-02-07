@@ -98,7 +98,10 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 
 "nmap <leader>qf  <Plug>(coc-fix-current)
 " Fix autofix problem of current line
-nmap <leader>ff  <Plug>(coc-fix-current)
+nmap <leader>cf  <Plug>(coc-fix-current)
+
+" Fix file using ALE
+noremap <leader>af :ALEFix<CR>
 
 " Use `:Format` for format current buffer
 command! -nargs=0 Format :call CocAction('format')
