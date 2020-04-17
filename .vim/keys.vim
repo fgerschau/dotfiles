@@ -98,7 +98,7 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 
 "nmap <leader>qf  <Plug>(coc-fix-current)
 " Fix autofix problem of current line
-nmap <leader>cf  <Plug>(coc-fix-current)
+nmap <leader>ff  <Plug>(coc-fix-current)
 
 " Fix file using ALE
 noremap <leader>af :ALEFix<CR>
@@ -130,6 +130,12 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Restart tsserver
 nnoremap <leader>tr :CocCommand tsserver.restart<CR>
+
+" COC Multiple cursors
+nmap <silent> <C-c> <Plug>(coc-cursors-position)
+nmap <silent> <C-w> <Plug>(coc-cursors-word)
+xmap <silent> <C-w> <Plug>(coc-cursors-range)
+nmap <leader>x  <Plug>(coc-cursors-operator)
 
 " Buffer nav
 noremap <leader>z :bp<CR>
