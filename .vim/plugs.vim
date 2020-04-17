@@ -60,4 +60,7 @@ Plug 'janko-m/vim-test'
 " Linting
 Plug 'dense-analysis/ale'
 
+" MDX
+Plug 'jxnblk/vim-mdx-js'
+
 call plug#end()
