@@ -58,6 +58,15 @@ set hidden
 set cmdheight=2
 set shortmess=aFc
 
+" Plugins
+"let g:coc_global_extensions=[
+    "\ "coc-tsserver",
+    "\ "coc-tslint-plugin"
+    "\ "coc-json",
+    "\ "coc-css",
+    "\ "coc-omni",
+"\]
+
 " Markdown preview
 let vim_markdown_preview_github=1
 let vim_markdown_preview_browser='Google Chrome'
