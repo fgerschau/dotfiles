@@ -4,6 +4,9 @@ if [ -f /etc/profile ]; then
     source /etc/profile
 fi
 
+PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
