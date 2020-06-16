@@ -3,7 +3,6 @@ call plug#begin('~/dotfiles/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'shougo/vimproc.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'kien/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'rakr/vim-one', { 'as': 'one'  }

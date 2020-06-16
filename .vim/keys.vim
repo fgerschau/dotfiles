@@ -18,6 +18,9 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 
+" Fuzzy search
+nmap <C-p> :FZF<CR>
+
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
@@ -54,10 +57,10 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " For local replace
-nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+"nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
 
 " For global replace
-nnoremap gR gD:%s/<C-R>///gc<left><left><left>
+"nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 " Use K for show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>

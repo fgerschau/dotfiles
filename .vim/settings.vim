@@ -29,7 +29,9 @@ autocmd BufEnter * call SyncTree()
 " Quits nerdtree when opening a file
 let g:NERDTreeQuitOnOpen = 1
 
+" Other nerdtree settings
 let g:NERDTreeWinSize=60
+let NERDTreeShowHidden=1
 
 " ================== Tabs ==================
 let NERDTreeMapOpenInTab='\r'
@@ -44,14 +46,8 @@ autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 set background=dark
 colorscheme solarized
 
-" Fuzzy search options crtlp
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-" Requires fd to be installed (brew install fd)
-let g:ctrlp_user_command = 'fd --type f --color=never "" %s'
-let g:ctrlp_use_caching = 0
-" Requires boost to be installed (brew install cmake python boost)
-" https://bluz71.github.io/2017/10/26/turbocharge-the-ctrlp-vim-plugin.html
-" let g:ctrlp_match_func = { 'match': 'cpsm#CtrlPMatch' }
+" FZF
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " ===== Coc =====
 set hidden
