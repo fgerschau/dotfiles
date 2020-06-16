@@ -47,7 +47,7 @@ set background=dark
 colorscheme solarized
 
 " FZF
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 
 " ===== Coc =====
 set hidden
