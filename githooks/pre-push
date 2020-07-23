@@ -10,7 +10,7 @@ then
   command sh ./.git/hooks/pre-push
 fi
 
-if test -e ./jest.config.js
-then
-  npm test
-fi
+#if test -e ./jest.config.js
+#then
+  #npm test
+#fi
