@@ -5,6 +5,7 @@ Plug 'shougo/vimproc.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'jparise/vim-graphql'
 Plug 'rakr/vim-one', { 'as': 'one'  }
 Plug 'vim-airline/vim-airline'
 
@@ -61,5 +62,8 @@ Plug 'dense-analysis/ale'
 
 " MDX
 Plug 'jxnblk/vim-mdx-js'
+
+" Emmet
+Plug 'mattn/emmet-vim'
 
 call plug#end()
