@@ -114,12 +114,6 @@ alias typescriptify="$HOME/scripts/typescriptify.sh"
 alias vi="nvim"
 alias vim="nvim"
 
-eval "$(thefuck --alias)"
-
-
-
-eval $(thefuck --alias)
-
 # Change default vimrc directory
 export VIMINIT="source ~/dotfiles/.vim/init.vim"
 
