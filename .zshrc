@@ -111,6 +111,8 @@ export NVM_DIR="$HOME/.nvm"
 alias gpup="git push -u origin HEAD"
 alias gs="git status"
 alias typescriptify="$HOME/scripts/typescriptify.sh"
+alias vi="nvim"
+alias vim="nvim"
 
 eval "$(thefuck --alias)"
 
