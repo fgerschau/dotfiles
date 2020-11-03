@@ -111,12 +111,8 @@ export NVM_DIR="$HOME/.nvm"
 alias gpup="git push -u origin HEAD"
 alias gs="git status"
 alias typescriptify="$HOME/scripts/typescriptify.sh"
-
-eval "$(thefuck --alias)"
-
-
-
-eval $(thefuck --alias)
+alias vi="nvim"
+alias vim="nvim"
 
 # Change default vimrc directory
 export VIMINIT="source ~/dotfiles/.vim/init.vim"
