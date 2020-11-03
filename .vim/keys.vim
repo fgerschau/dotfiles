@@ -186,3 +186,23 @@ nmap <leader>tv :TestVisit<CR>
 
 " Emojis
 nnoremap <leader>et a<C-v>U2705<esc>
+
+" Copy file path
+"
+" This maps the following keys:
+"
+"  'cs copies just the filename.
+"  'cl copies the filename including its full path.
+"  'c8 copies the filename in 8.3 format for DOS and Windows 9x
+"
+" Convert slashes to backslashes for Windows.
+if has('win32')
+  nmap 'cs :let @*=substitute(expand("%"), "/", "\\", "g")<CR>
+  nmap 'cl :let @*=substitute(expand("%:p"), "/", "\\", "g")<CR>
+
+  " This will copy the path in 8.3 short format, for DOS and Windows 9x
+  nmap 'c8 :let @*=substitute(expand("%:p:8"), "/", "\\", "g")<CR>
+else
+  nmap 'cs :let @*=expand("%")<CR>
+  nmap 'cl :let @*=expand("%:p")<CR>
+endif
