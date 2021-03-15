@@ -66,4 +66,7 @@ Plug 'jxnblk/vim-mdx-js'
 " Emmet
 Plug 'mattn/emmet-vim'
 
+" Prettier
+Plug 'prettier/vim-prettier'
+
 call plug#end()

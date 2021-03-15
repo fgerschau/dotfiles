@@ -95,4 +95,9 @@ let g:ale_fixers = {
 
 let g:ale_fix_on_save = 1
 
+" Prettier
+
+let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat_require_pragma = 0
+
 set cursorline
