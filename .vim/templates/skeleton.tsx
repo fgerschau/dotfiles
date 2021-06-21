@@ -1,10 +1,9 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-const FILENAME: FC = () => {
+export const FILENAME = () => {
   return (
     <div>
+      FILENAME
     </div>
   );
 }
-
-export default FILENAME;
