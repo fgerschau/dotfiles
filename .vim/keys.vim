@@ -165,6 +165,7 @@ xnoremap s[ xi[]<Esc>P%
 xnoremap s{ xi{}<Esc>P%
 xnoremap s" xi""<Esc>P%
 xnoremap s' xi''<Esc>P%
+xnoremap s` xi``<Esc>P%
 
 " COC
 nmap <leader>rn <Plug>(coc-rename)
